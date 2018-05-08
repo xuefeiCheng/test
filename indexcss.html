@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<!--1-->
+<html dir="rtl">
+	<head>
+		<meta charset="UTF-8">
+		<title>阿拉伯文等语言从右向左展示css解决方案 </title>
+	</head>
+	<body>
+		<!--库表存储的为正确的顺序，只需要在显示的时候，从右向左展示，不更改字符串本身的顺序-->
+		<p>كيف حالك؟ </p>
+		<!--2-->
+		<p style="direction: rtl;"> كيف حالك؟ </p>
+		<!--正确的顺序-->
+		<p> أنا  程雪飞  </p>
+		<!--3-->
+		<!--存储的时候 不是正确的顺序，需要在右侧展示，并且字符也要颠倒-->
+		<p style="direction: rtl;unicode-bidi:bidi-override">.么好你</p>
+		
+	</body>
+</html>
